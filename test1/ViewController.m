@@ -28,6 +28,14 @@ typedef enum //定义一个常见的枚举类型
     [super viewDidLoad];
     int c = playa+playb;
     NSLog(@"%d",c);
+    UIButton * oneButton =[[UIButton alloc]init];
+    
+    oneButton.backgroundColor = [UIColor redColor];
+    
+    oneButton.frame = CGRectMake(20,20, 40, 40);
+    
+    
+    [self.view addSubview:oneButton];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -36,6 +44,12 @@ typedef enum //定义一个常见的枚举类型
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)dealloc
+{
+    
+    NSLog(@"wwwwwwwwwwww");
+    
+    
+}
 
 @end

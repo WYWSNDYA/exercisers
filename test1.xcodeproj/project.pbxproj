@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7037FBFB1F0423FF00042F98 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7037FBFA1F0423FF00042F98 /* TwoViewController.m */; };
 		703A38CF1EF8F242002DEC70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A38CE1EF8F242002DEC70 /* main.m */; };
 		703A38D21EF8F242002DEC70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A38D11EF8F242002DEC70 /* AppDelegate.m */; };
 		703A38D51EF8F242002DEC70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A38D41EF8F242002DEC70 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7037FBF91F0423FF00042F98 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		7037FBFA1F0423FF00042F98 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		703A38CA1EF8F242002DEC70 /* test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		703A38CE1EF8F242002DEC70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		703A38D01EF8F242002DEC70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				703A38D11EF8F242002DEC70 /* AppDelegate.m */,
 				703A38D31EF8F242002DEC70 /* ViewController.h */,
 				703A38D41EF8F242002DEC70 /* ViewController.m */,
+				7037FBF91F0423FF00042F98 /* TwoViewController.h */,
+				7037FBFA1F0423FF00042F98 /* TwoViewController.m */,
 				703A38D61EF8F242002DEC70 /* Main.storyboard */,
 				703A38D91EF8F242002DEC70 /* Assets.xcassets */,
 				703A38DB1EF8F242002DEC70 /* LaunchScreen.storyboard */,
@@ -153,6 +158,7 @@
 				703A38D51EF8F242002DEC70 /* ViewController.m in Sources */,
 				703A38D21EF8F242002DEC70 /* AppDelegate.m in Sources */,
 				703A38CF1EF8F242002DEC70 /* main.m in Sources */,
+				7037FBFB1F0423FF00042F98 /* TwoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +317,7 @@
 				703A38E31EF8F242002DEC70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
