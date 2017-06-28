@@ -7,6 +7,16 @@
 //
 
 #import "ViewController.h"
+typedef enum //定义一个常见的枚举类型
+{
+    
+    playa = 1,
+    playb = 2,
+    playc = 3,
+    
+    
+}assert;//枚举名字可直接在项目中应用这个枚举的类型值并将其应用到想要的类型中去完成这个类型的应用值类型
+
 
 @interface ViewController ()
 
@@ -16,6 +26,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    int c = playa+playb;
+    NSLog(@"%d",c);
     // Do any additional setup after loading the view, typically from a nib.
 }
 
