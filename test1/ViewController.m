@@ -33,6 +33,9 @@ typedef enum //定义一个常见的枚举类型
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]]];
     [self.view addSubview:webView];*/
     
+    
+    [NSThread sleepForTimeInterval:2.0];
+    
     WKWebView * wkWebView =[[WKWebView alloc]initWithFrame:self.view.bounds];
     
     wkWebView.UIDelegate=self;
