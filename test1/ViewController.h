@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
+#import "Masonry.h"
 @interface ViewController : UIViewController<WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler>
-
-
+@property(nonatomic,strong)UIButton * againButton;
+@property(nonatomic,strong)UILabel * showLable;
+@property(nonatomic,strong)UIView * showView;
 @end
 

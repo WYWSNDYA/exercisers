@@ -8,7 +8,10 @@
 
 #import "ViewController.h"
 #import <WebKit/WebKit.h>
-#define iOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+#define iOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0
+#define kIphone6Width(w) ([UIScreen mainScreen].bounds.size.width / 375.0 * w)
+#define kIphone6Height(h) ([UIScreen mainScreen].bounds.size.height / 667.0 * h)
+
 typedef enum //定义一个常见的枚举类型
 {
     
@@ -19,12 +22,20 @@ typedef enum //定义一个常见的枚举类型
     
 }assert;//枚举名字可直接在项目中应用这个枚举的类型值并将其应用到想要的类型中去完成这个类型的应用值类型
 
-@interface ViewController()
-
-@end//扩展这个类的一系列的属性以及方法
-
-
 @implementation ViewController
+
+-(UIButton *)againButton
+{
+    if (!_againButton) {
+        
+        _againButton=[[UIButton alloc]init];
+        [self.view addSubview:_againButton];
+        _againButton.backgroundColor =[UIColor redColor];
+    }
+    
+    return _againButton;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,7 +45,20 @@ typedef enum //定义一个常见的枚举类型
     [self.view addSubview:webView];*/
     
     
-    [NSThread sleepForTimeInterval:2.0];
+    //self.againButton =[[UIButton alloc]init];
+    //[self.view addSubview:self.againButton];
+    //self.againButton.backgroundColor = [UIColor redColor];
+    self.againButton.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.againButton mas_makeConstraints:^(MASConstraintMaker *make)
+    {
+        make.top.equalTo(self.view.mas_top).offset(kIphone6Height(20));
+        make.left.equalTo(self.view.mas_left).offset(kIphone6Width(20));
+        make.bottom.equalTo(self.view.mas_bottom).offset(-kIphone6Height(20));
+        make.width.mas_equalTo(kIphone6Width(250));
+        
+    }];
+    
+    /*[NSThread sleepForTimeInterval:2.0];
     
     WKWebView * wkWebView =[[WKWebView alloc]initWithFrame:self.view.bounds];
     
@@ -42,7 +66,7 @@ typedef enum //定义一个常见的枚举类型
     
     wkWebView.navigationDelegate = self;
     
-    [wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]]];
+    //[wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]]];
     
     [self.view addSubview:wkWebView];//去使用wkwebview代替webview
     
@@ -114,6 +138,9 @@ typedef enum //定义一个常见的枚举类型
 -(void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation{
     
 
+    
+}
+*/
     
 }
 - (void)didReceiveMemoryWarning {
