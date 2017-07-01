@@ -39,7 +39,29 @@ typedef enum //定义一个常见的枚举类型
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+    
+    
+  //ReachabilityStatus status = [GLobalRealReachability currentReachabilityStatus];
+    
+/*
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //NSMutableDictionary *parameters = @{@"":@"",@"":@""};
+    
+    [manager POST:@"http://test.tiaooo.com/interface/search/get_star" parameters:nil progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        
+        //NSLog(@">>>>>%@",responseObject);
+        
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        NSLog(@"11111111");
+        
+    }];
+*/
     /*WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]]];
     [self.view addSubview:webView];*/
@@ -95,10 +117,6 @@ typedef enum //定义一个常见的枚举类型
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-
-
-
-
 - (BOOL)is64bit
 {
     
@@ -141,7 +159,6 @@ typedef enum //定义一个常见的枚举类型
     
 }
 */
-    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
