@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <WebKit/WebKit.h>
+#import "Reachability.h"
 #define iOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0
 #define kIphone6Width(w) ([UIScreen mainScreen].bounds.size.width / 375.0 * w)
 #define kIphone6Height(h) ([UIScreen mainScreen].bounds.size.height / 667.0 * h)
@@ -39,6 +40,45 @@ typedef enum //定义一个常见的枚举类型
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
+    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+    
+    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        
+        // 当网络状态改变时调用
+        switch (status) {
+            case AFNetworkReachabilityStatusUnknown:
+                NSLog(@"未知网络");
+                break;
+            case AFNetworkReachabilityStatusNotReachable:
+                NSLog(@"没有网络");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+                NSLog(@"切换到2g或者3g");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+                NSLog(@"WIFI");
+                break;
+        }
+    }];
+    
+    //开始监控
+    [manager startMonitoring];
+    
+ //通过af来监听网络的变化，个人感觉效果不是一般的厉害而是非常的厉害 可以学习
+    
+//    [[NSNotificationCenter defaultCenter]addObserver:self
+//                                            selector:@selector(networkStateChange) name:kReachabilityChangedNotification object:nil];
+//    
+//    // 创建Reachability
+//    Reachability *reachability = [Reachability reachabilityForInternetConnection];
+//    
+//    // 开始监控网络(一旦网络状态发生改变, 就会发出通知kReachabilityChangedNotification)
+//    [reachability startNotifier];
+//    
+//    
     
     
   //ReachabilityStatus status = [GLobalRealReachability currentReachabilityStatus];
@@ -160,6 +200,25 @@ typedef enum //定义一个常见的枚举类型
 }
 */
 }
+//- (void)networkStateChange
+//{
+//    // 1.检测网络状态
+//    Reachability *wifi = [Reachability reachabilityForLocalWiFi];
+//    
+//    // 2.检测手机是否能上网络
+//    Reachability *connect = [Reachability reachabilityForInternetConnection];
+//    
+//    // 3.判断网络状态
+//    if ([wifi currentReachabilityStatus] != NotReachable) {
+//        NSLog(@"有wifi");
+//    }
+//    else if ([connect currentReachabilityStatus] != NotReachable) {
+//        NSLog(@"使用手机自带网络进行上网");
+//    }
+//    else {
+//        NSLog(@"没有网络");
+//    }
+//}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

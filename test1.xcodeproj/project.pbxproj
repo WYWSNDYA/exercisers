@@ -14,6 +14,7 @@
 		703A38D81EF8F242002DEC70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703A38D61EF8F242002DEC70 /* Main.storyboard */; };
 		703A38DA1EF8F242002DEC70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 703A38D91EF8F242002DEC70 /* Assets.xcassets */; };
 		703A38DD1EF8F242002DEC70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703A38DB1EF8F242002DEC70 /* LaunchScreen.storyboard */; };
+		706072751F08056000EE9DC2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 706072741F08056000EE9DC2 /* Reachability.m */; };
 		70EA20691F07630A00837271 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EA20681F07630A00837271 /* SystemConfiguration.framework */; };
 		70F1D45A1F06876C00FE4C2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70F1D4591F06876C00FE4C2F /* Images.xcassets */; };
 		70F1D45C1F0687A900FE4C2F /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70F1D45B1F0687A900FE4C2F /* Images-2.xcassets */; };
@@ -34,6 +35,8 @@
 		703A38D91EF8F242002DEC70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		703A38DC1EF8F242002DEC70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		703A38DE1EF8F242002DEC70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		706072731F08055A00EE9DC2 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		706072741F08056000EE9DC2 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		70EA20681F07630A00837271 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		70F1D4591F06876C00FE4C2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		70F1D45B1F0687A900FE4C2F /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 				703A38D41EF8F242002DEC70 /* ViewController.m */,
 				7037FBF91F0423FF00042F98 /* TwoViewController.h */,
 				7037FBFA1F0423FF00042F98 /* TwoViewController.m */,
+				706072731F08055A00EE9DC2 /* Reachability.h */,
+				706072741F08056000EE9DC2 /* Reachability.m */,
 				703A38D61EF8F242002DEC70 /* Main.storyboard */,
 				703A38D91EF8F242002DEC70 /* Assets.xcassets */,
 				703A38DB1EF8F242002DEC70 /* LaunchScreen.storyboard */,
@@ -247,6 +252,7 @@
 				703A38D21EF8F242002DEC70 /* AppDelegate.m in Sources */,
 				703A38CF1EF8F242002DEC70 /* main.m in Sources */,
 				7037FBFB1F0423FF00042F98 /* TwoViewController.m in Sources */,
+				706072751F08056000EE9DC2 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
