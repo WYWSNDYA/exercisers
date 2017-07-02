@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <WebKit/WebKit.h>
 #import "Reachability.h"
+#import "NetJudgeMent.h"
+#import "DataStoreSource.h"
 #define iOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0
 #define kIphone6Width(w) ([UIScreen mainScreen].bounds.size.width / 375.0 * w)
 #define kIphone6Height(h) ([UIScreen mainScreen].bounds.size.height / 667.0 * h)
@@ -41,9 +43,23 @@ typedef enum //定义一个常见的枚举类型
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [NetJudgeMent judgeMentFromNet];
     
+    [DataStoreSource creatTable];
     
-    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+    [DataStoreSource  insertData:@"li1" age:10
+     ];
+    [DataStoreSource  insertData:@"li2" age:11
+     ];
+    [DataStoreSource  insertData:@"li3" age:12
+     ];
+    
+    [DataStoreSource deleFromTheForm:@"li1"];
+    
+    [DataStoreSource checkFromTheForm];
+ 
+    
+ /* AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
     
     [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         
@@ -66,6 +82,8 @@ typedef enum //定义一个常见的枚举类型
     
     //开始监控
     [manager startMonitoring];
+  
+  */
     
  //通过af来监听网络的变化，个人感觉效果不是一般的厉害而是非常的厉害 可以学习
     

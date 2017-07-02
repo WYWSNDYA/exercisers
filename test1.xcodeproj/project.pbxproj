@@ -16,6 +16,9 @@
 		703A38DD1EF8F242002DEC70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703A38DB1EF8F242002DEC70 /* LaunchScreen.storyboard */; };
 		706072751F08056000EE9DC2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 706072741F08056000EE9DC2 /* Reachability.m */; };
 		70EA20691F07630A00837271 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EA20681F07630A00837271 /* SystemConfiguration.framework */; };
+		70EEF2E81F092CC600EF841A /* NetJudgeMent.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EEF2E71F092CC600EF841A /* NetJudgeMent.m */; };
+		70EEF2EB1F0934F100EF841A /* DataStoreSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EEF2EA1F0934F100EF841A /* DataStoreSource.m */; };
+		70EEF2ED1F093A0300EF841A /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EEF2EC1F093A0300EF841A /* libsqlite3.0.tbd */; };
 		70F1D45A1F06876C00FE4C2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70F1D4591F06876C00FE4C2F /* Images.xcassets */; };
 		70F1D45C1F0687A900FE4C2F /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70F1D45B1F0687A900FE4C2F /* Images-2.xcassets */; };
 		D42E1F2129F82DA6BF094186 /* Pods_test1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EFF647A75CA85C14615EA2 /* Pods_test1.framework */; };
@@ -38,6 +41,11 @@
 		706072731F08055A00EE9DC2 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		706072741F08056000EE9DC2 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		70EA20681F07630A00837271 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		70EEF2E61F092CC600EF841A /* NetJudgeMent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetJudgeMent.h; sourceTree = "<group>"; };
+		70EEF2E71F092CC600EF841A /* NetJudgeMent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetJudgeMent.m; sourceTree = "<group>"; };
+		70EEF2E91F0934F100EF841A /* DataStoreSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataStoreSource.h; path = ../DataStoreSource.h; sourceTree = "<group>"; };
+		70EEF2EA1F0934F100EF841A /* DataStoreSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataStoreSource.m; path = ../DataStoreSource.m; sourceTree = "<group>"; };
+		70EEF2EC1F093A0300EF841A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		70F1D4591F06876C00FE4C2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		70F1D45B1F0687A900FE4C2F /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		91D01CEFD45B42CB3ADA257D /* Pods-test1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test1/Pods-test1.debug.xcconfig"; sourceTree = "<group>"; };
@@ -49,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70EEF2ED1F093A0300EF841A /* libsqlite3.0.tbd in Frameworks */,
 				70EA20691F07630A00837271 /* SystemConfiguration.framework in Frameworks */,
 				D42E1F2129F82DA6BF094186 /* Pods_test1.framework in Frameworks */,
 			);
@@ -78,6 +87,10 @@
 		703A38CC1EF8F242002DEC70 /* test1 */ = {
 			isa = PBXGroup;
 			children = (
+				70EEF2E91F0934F100EF841A /* DataStoreSource.h */,
+				70EEF2EA1F0934F100EF841A /* DataStoreSource.m */,
+				70EEF2E61F092CC600EF841A /* NetJudgeMent.h */,
+				70EEF2E71F092CC600EF841A /* NetJudgeMent.m */,
 				703A38D01EF8F242002DEC70 /* AppDelegate.h */,
 				703A38D11EF8F242002DEC70 /* AppDelegate.m */,
 				703A38D31EF8F242002DEC70 /* ViewController.h */,
@@ -108,6 +121,7 @@
 		8CE4AABCAA1670849AD1B9F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				70EEF2EC1F093A0300EF841A /* libsqlite3.0.tbd */,
 				70EA20681F07630A00837271 /* SystemConfiguration.framework */,
 				44EFF647A75CA85C14615EA2 /* Pods_test1.framework */,
 			);
@@ -248,9 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70EEF2EB1F0934F100EF841A /* DataStoreSource.m in Sources */,
 				703A38D51EF8F242002DEC70 /* ViewController.m in Sources */,
 				703A38D21EF8F242002DEC70 /* AppDelegate.m in Sources */,
 				703A38CF1EF8F242002DEC70 /* main.m in Sources */,
+				70EEF2E81F092CC600EF841A /* NetJudgeMent.m in Sources */,
 				7037FBFB1F0423FF00042F98 /* TwoViewController.m in Sources */,
 				706072751F08056000EE9DC2 /* Reachability.m in Sources */,
 			);
