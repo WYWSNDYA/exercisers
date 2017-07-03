@@ -11,6 +11,7 @@
 #import "Reachability.h"
 #import "NetJudgeMent.h"
 #import "DataStoreSource.h"
+#import "loadViewViewController.h"
 #define iOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0
 #define kIphone6Width(w) ([UIScreen mainScreen].bounds.size.width / 375.0 * w)
 #define kIphone6Height(h) ([UIScreen mainScreen].bounds.size.height / 667.0 * h)
@@ -34,11 +35,23 @@ typedef enum //定义一个常见的枚举类型
         _againButton=[[UIButton alloc]init];
         [self.view addSubview:_againButton];
         _againButton.backgroundColor =[UIColor redColor];
+        [_againButton addTarget:self action:@selector(upToNext) forControlEvents:UIControlEventTouchUpInside];
     }
     
     return _againButton;
 }
-
+-(void)upToNext
+{
+    
+    loadViewViewController * loadView =[[loadViewViewController alloc]init];
+    
+    [self presentViewController:loadView animated:YES completion:^{
+        
+        NSLog(@"ok");
+    }];
+    
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

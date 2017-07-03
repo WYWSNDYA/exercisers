@@ -15,6 +15,7 @@
 		703A38DA1EF8F242002DEC70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 703A38D91EF8F242002DEC70 /* Assets.xcassets */; };
 		703A38DD1EF8F242002DEC70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703A38DB1EF8F242002DEC70 /* LaunchScreen.storyboard */; };
 		706072751F08056000EE9DC2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 706072741F08056000EE9DC2 /* Reachability.m */; };
+		70DDA6951F0A75DF005CAF75 /* loadViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DDA6941F0A75DF005CAF75 /* loadViewViewController.m */; };
 		70EA20691F07630A00837271 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EA20681F07630A00837271 /* SystemConfiguration.framework */; };
 		70EEF2E81F092CC600EF841A /* NetJudgeMent.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EEF2E71F092CC600EF841A /* NetJudgeMent.m */; };
 		70EEF2EB1F0934F100EF841A /* DataStoreSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EEF2EA1F0934F100EF841A /* DataStoreSource.m */; };
@@ -40,6 +41,8 @@
 		703A38DE1EF8F242002DEC70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		706072731F08055A00EE9DC2 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		706072741F08056000EE9DC2 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		70DDA6931F0A75DF005CAF75 /* loadViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loadViewViewController.h; sourceTree = "<group>"; };
+		70DDA6941F0A75DF005CAF75 /* loadViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loadViewViewController.m; sourceTree = "<group>"; };
 		70EA20681F07630A00837271 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		70EEF2E61F092CC600EF841A /* NetJudgeMent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetJudgeMent.h; sourceTree = "<group>"; };
 		70EEF2E71F092CC600EF841A /* NetJudgeMent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetJudgeMent.m; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 		703A38C11EF8F242002DEC70 = {
 			isa = PBXGroup;
 			children = (
+				70DDA6931F0A75DF005CAF75 /* loadViewViewController.h */,
+				70DDA6941F0A75DF005CAF75 /* loadViewViewController.m */,
 				703A38CC1EF8F242002DEC70 /* test1 */,
 				703A38CB1EF8F242002DEC70 /* Products */,
 				8F47D5EAE87C170CAB422199 /* Pods */,
@@ -267,6 +272,7 @@
 				703A38D21EF8F242002DEC70 /* AppDelegate.m in Sources */,
 				703A38CF1EF8F242002DEC70 /* main.m in Sources */,
 				70EEF2E81F092CC600EF841A /* NetJudgeMent.m in Sources */,
+				70DDA6951F0A75DF005CAF75 /* loadViewViewController.m in Sources */,
 				7037FBFB1F0423FF00042F98 /* TwoViewController.m in Sources */,
 				706072751F08056000EE9DC2 /* Reachability.m in Sources */,
 			);
