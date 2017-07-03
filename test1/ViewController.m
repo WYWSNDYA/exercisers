@@ -47,12 +47,8 @@ typedef enum //定义一个常见的枚举类型
     
     [DataStoreSource creatTable];
     
-    [DataStoreSource  insertData:@"li1" age:10
-     ];
-    [DataStoreSource  insertData:@"li2" age:11
-     ];
-    [DataStoreSource  insertData:@"li3" age:12
-     ];
+    [DataStoreSource  insertData:@"222" age:5];
+    
     
     [DataStoreSource deleFromTheForm:@"li1"];
     

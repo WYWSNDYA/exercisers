@@ -21,7 +21,8 @@
     if ([db open])
     {
         //4.创表
-        BOOL result = [db executeUpdate:@"CREATE TABLE IF NOT EXISTS t_student (id integer PRIMARY KEY AUTOINCREMENT, name text NOT NULL, age integer NOT NULL);"];
+        BOOL result = [db executeUpdate:@"CREATE TABLE IF NOT EXISTS t_student (id integer PRIMARY KEY AUTOINCREMENT, name text, age integer);"];
+        
         if (result)
         {
             NSLog(@"创建表成功");
@@ -53,8 +54,6 @@
         
         NSLog(@"2222222");
     }
-    
-    
     BOOL d = [db executeUpdate:@"INSERT INTO t_student (name, age) VALUES (?,?);",name,@(age)];
     
     if (d) {
@@ -85,7 +84,6 @@
     }
     
     
-    
   BOOL t = [db executeUpdate:@"delete from t_student where name = ?;",name];
     
     if (t) {
@@ -102,8 +100,6 @@
 
 +(void)checkFromTheForm
 {
-    
-    
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentDirectory = [paths objectAtIndex:0];
     //dbPath： 数据库路径，在Document中。
@@ -114,15 +110,7 @@
     
     [db open];
     
-    //FMResultSet *resultSet = [db executeQuery:@"select * from t_student where id<?;",@(4)];
-    
-    
-    
     FMResultSet *resultSet = [db executeQuery:@"select * from t_student where id<?;",@(4)];
-    
-    
-    
-    
     
     //遍历结果集合
     
@@ -137,31 +125,12 @@
         int age = [resultSet intForColumn:@"age"];
         
         
-        NSLog(@"<<<<<<<<%d",age);
+        NSLog(@"<<<<<<<<%@",name);
         
         
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //修改表内容
 +(void)Modify
 {
