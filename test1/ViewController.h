@@ -12,10 +12,12 @@
 #import "AFNetworking.h"
 #import "TwoViewController.h"
 #import "RealReachability.h"
+#import "SKFFPSLabel.h"
 
 @interface ViewController : UIViewController<WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler>
 @property(nonatomic,strong)UIButton * againButton;
 @property(nonatomic,strong)UILabel * showLable;
 @property(nonatomic,strong)UIView * showView;
+@property (nonatomic, strong) SKFFPSLabel *SkfFPSLabel;
 @end
 

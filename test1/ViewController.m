@@ -34,7 +34,7 @@ typedef enum //定义一个常见的枚举类型
         
         _againButton=[[UIButton alloc]init];
         [self.view addSubview:_againButton];
-        _againButton.backgroundColor =[UIColor redColor];
+        //_againButton.backgroundColor =[UIColor redColor];
         [_againButton addTarget:self action:@selector(upToNext) forControlEvents:UIControlEventTouchUpInside];
     }
     
@@ -66,6 +66,13 @@ typedef enum //定义一个常见的枚举类型
     [DataStoreSource deleFromTheForm:@"li1"];
     
     [DataStoreSource checkFromTheForm];
+    
+    
+    self.SkfFPSLabel = [[SKFFPSLabel alloc]init];
+    self.SkfFPSLabel.frame = CGRectMake(40, 354, 50, 30);
+    //    _SkfFPSLabel setb
+    [self.view addSubview:self.SkfFPSLabel];
+    [self.view bringSubviewToFront:self.SkfFPSLabel];
  
     
  /* AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
@@ -246,6 +253,16 @@ typedef enum //定义一个常见的枚举类型
 //        NSLog(@"没有网络");
 //    }
 //}
+
+
+#pragma mark    开启FPS监测的方法
+#pragma mark    关闭FPS监测方法
+-(void)closeTheFPSLabel{
+    [self.SkfFPSLabel SKFFPSstopDisplayLink];
+    self.SkfFPSLabel = nil;
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

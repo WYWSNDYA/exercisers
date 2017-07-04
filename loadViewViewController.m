@@ -7,9 +7,10 @@
 //
 
 #import "loadViewViewController.h"
-
+#import "SKFFPSLabel.h"
+typedef int(^SayHello)(int a, int b);
 @interface loadViewViewController ()
-
+@property(nonatomic,weak)SayHello sayWord;
 @end
 
 @implementation loadViewViewController
@@ -42,19 +43,10 @@
     oneButton.backgroundColor=[UIColor redColor];
     [oneButton addTarget:self action:@selector(beginToDownLoad) forControlEvents:UIControlEventTouchUpInside];
     oneButton.tag = 1;
-    
-    
-    
     UIButton * oneButtone = [[UIButton alloc]initWithFrame:CGRectMake(50, 350, 60, 60)];
     [self.view addSubview:oneButtone];
     oneButtone.backgroundColor=[UIColor redColor];
     [oneButtone addTarget:self action:@selector(endToLoading) forControlEvents:UIControlEventTouchUpInside];
-    
-    
-    
-    
-    
-    
 }
 
 
