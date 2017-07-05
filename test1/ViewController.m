@@ -12,6 +12,7 @@
 #import "NetJudgeMent.h"
 #import "DataStoreSource.h"
 #import "loadViewViewController.h"
+#import "shareAlongton.h"
 #define iOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0
 #define kIphone6Width(w) ([UIScreen mainScreen].bounds.size.width / 375.0 * w)
 #define kIphone6Height(h) ([UIScreen mainScreen].bounds.size.height / 667.0 * h)
@@ -55,6 +56,19 @@ typedef enum //定义一个常见的枚举类型
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    shareAlongton * oneAlong2 = [shareAlongton shareTools];
+     shareAlongton * oneAlong3 = [shareAlongton shareTools];
+     shareAlongton * oneAlong4 = [shareAlongton shareTools];
+    
+    [oneAlong2 printNameAndInt];
+    
+    oneAlong2.a = 1;
+    oneAlong2.copydRight = @"goodThing";
+    
+    
+    
     
     [NetJudgeMent judgeMentFromNet];
     
