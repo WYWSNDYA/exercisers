@@ -15,6 +15,7 @@
 		703A38DA1EF8F242002DEC70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 703A38D91EF8F242002DEC70 /* Assets.xcassets */; };
 		703A38DD1EF8F242002DEC70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703A38DB1EF8F242002DEC70 /* LaunchScreen.storyboard */; };
 		706072751F08056000EE9DC2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 706072741F08056000EE9DC2 /* Reachability.m */; };
+		70BF07461F0EA4C100975BB0 /* oneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BF07451F0EA4C100975BB0 /* oneModel.m */; };
 		70DDA6951F0A75DF005CAF75 /* loadViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DDA6941F0A75DF005CAF75 /* loadViewViewController.m */; };
 		70E9771E1F0BFFC500F23A4B /* SKFFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E9771D1F0BFFC500F23A4B /* SKFFPSLabel.m */; };
 		70EA20691F07630A00837271 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EA20681F07630A00837271 /* SystemConfiguration.framework */; };
@@ -43,6 +44,8 @@
 		703A38DE1EF8F242002DEC70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		706072731F08055A00EE9DC2 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		706072741F08056000EE9DC2 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		70BF07441F0EA4C100975BB0 /* oneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oneModel.h; sourceTree = "<group>"; };
+		70BF07451F0EA4C100975BB0 /* oneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = oneModel.m; sourceTree = "<group>"; };
 		70DDA6931F0A75DF005CAF75 /* loadViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = loadViewViewController.h; path = ../loadViewViewController.h; sourceTree = "<group>"; };
 		70DDA6941F0A75DF005CAF75 /* loadViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = loadViewViewController.m; path = ../loadViewViewController.m; sourceTree = "<group>"; };
 		70E9771C1F0BFFBB00F23A4B /* SKFFPSLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKFFPSLabel.h; sourceTree = "<group>"; };
@@ -66,8 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70EEF2ED1F093A0300EF841A /* libsqlite3.0.tbd in Frameworks */,
 				70EA20691F07630A00837271 /* SystemConfiguration.framework in Frameworks */,
+				70EEF2ED1F093A0300EF841A /* libsqlite3.0.tbd in Frameworks */,
 				D42E1F2129F82DA6BF094186 /* Pods_test1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +124,8 @@
 				70F1D4591F06876C00FE4C2F /* Images.xcassets */,
 				70F1D45B1F0687A900FE4C2F /* Images-2.xcassets */,
 				703A38CD1EF8F242002DEC70 /* Supporting Files */,
+				70BF07441F0EA4C100975BB0 /* oneModel.h */,
+				70BF07451F0EA4C100975BB0 /* oneModel.m */,
 			);
 			path = test1;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70EEF2EB1F0934F100EF841A /* DataStoreSource.m in Sources */,
+				70BF07461F0EA4C100975BB0 /* oneModel.m in Sources */,
 				70ED0ABC1F0D527600BDD64D /* shareAlongton.m in Sources */,
 				703A38D51EF8F242002DEC70 /* ViewController.m in Sources */,
 				70E9771E1F0BFFC500F23A4B /* SKFFPSLabel.m in Sources */,

@@ -5,4 +5,5 @@ pod ‘Masonry’
 pod ‘AFNetworking’, '~> 3.0.4’
 pod 'RealReachability'
 pod ‘FMDB’
+pod ‘JSONModel’
 end
