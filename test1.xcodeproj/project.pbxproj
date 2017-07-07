@@ -17,6 +17,11 @@
 		706072751F08056000EE9DC2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 706072741F08056000EE9DC2 /* Reachability.m */; };
 		70BF07461F0EA4C100975BB0 /* oneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BF07451F0EA4C100975BB0 /* oneModel.m */; };
 		70DDA6951F0A75DF005CAF75 /* loadViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DDA6941F0A75DF005CAF75 /* loadViewViewController.m */; };
+		70E90C551F0FD0B800FBE913 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E90C541F0FD0B800FBE913 /* libc++.tbd */; };
+		70E90C571F0FD22A00FBE913 /* AMapFoundation in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E90C561F0FD22A00FBE913 /* AMapFoundation */; };
+		70E90C591F0FD26900FBE913 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E90C581F0FD26900FBE913 /* Security.framework */; };
+		70E90C5B1F0FD2A600FBE913 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E90C5A1F0FD2A600FBE913 /* libz.tbd */; };
+		70E90C5D1F0FD2BD00FBE913 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E90C5C1F0FD2BD00FBE913 /* libstdc++.6.0.9.tbd */; };
 		70E9771E1F0BFFC500F23A4B /* SKFFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E9771D1F0BFFC500F23A4B /* SKFFPSLabel.m */; };
 		70EA20691F07630A00837271 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EA20681F07630A00837271 /* SystemConfiguration.framework */; };
 		70ED0ABC1F0D527600BDD64D /* shareAlongton.m in Sources */ = {isa = PBXBuildFile; fileRef = 70ED0ABB1F0D527600BDD64D /* shareAlongton.m */; };
@@ -48,6 +53,11 @@
 		70BF07451F0EA4C100975BB0 /* oneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = oneModel.m; sourceTree = "<group>"; };
 		70DDA6931F0A75DF005CAF75 /* loadViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = loadViewViewController.h; path = ../loadViewViewController.h; sourceTree = "<group>"; };
 		70DDA6941F0A75DF005CAF75 /* loadViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = loadViewViewController.m; path = ../loadViewViewController.m; sourceTree = "<group>"; };
+		70E90C541F0FD0B800FBE913 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		70E90C561F0FD22A00FBE913 /* AMapFoundation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AMapFoundation; path = Pods/AMapFoundation; sourceTree = "<group>"; };
+		70E90C581F0FD26900FBE913 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		70E90C5A1F0FD2A600FBE913 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		70E90C5C1F0FD2BD00FBE913 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		70E9771C1F0BFFBB00F23A4B /* SKFFPSLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKFFPSLabel.h; sourceTree = "<group>"; };
 		70E9771D1F0BFFC500F23A4B /* SKFFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFFPSLabel.m; sourceTree = "<group>"; };
 		70EA20681F07630A00837271 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -69,7 +79,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E90C5D1F0FD2BD00FBE913 /* libstdc++.6.0.9.tbd in Frameworks */,
+				70E90C5B1F0FD2A600FBE913 /* libz.tbd in Frameworks */,
 				70EA20691F07630A00837271 /* SystemConfiguration.framework in Frameworks */,
+				70E90C591F0FD26900FBE913 /* Security.framework in Frameworks */,
+				70E90C571F0FD22A00FBE913 /* AMapFoundation in Frameworks */,
+				70E90C551F0FD0B800FBE913 /* libc++.tbd in Frameworks */,
 				70EEF2ED1F093A0300EF841A /* libsqlite3.0.tbd in Frameworks */,
 				D42E1F2129F82DA6BF094186 /* Pods_test1.framework in Frameworks */,
 			);
@@ -141,6 +156,11 @@
 		8CE4AABCAA1670849AD1B9F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				70E90C5C1F0FD2BD00FBE913 /* libstdc++.6.0.9.tbd */,
+				70E90C5A1F0FD2A600FBE913 /* libz.tbd */,
+				70E90C581F0FD26900FBE913 /* Security.framework */,
+				70E90C561F0FD22A00FBE913 /* AMapFoundation */,
+				70E90C541F0FD0B800FBE913 /* libc++.tbd */,
 				70EEF2EC1F093A0300EF841A /* libsqlite3.0.tbd */,
 				70EA20681F07630A00837271 /* SystemConfiguration.framework */,
 				44EFF647A75CA85C14615EA2 /* Pods_test1.framework */,
@@ -193,6 +213,11 @@
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = E9V4WE47UM;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -419,7 +444,7 @@
 				DEVELOPMENT_TEAM = E9V4WE47UM;
 				INFOPLIST_FILE = test1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wenfei.test1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cesi.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -433,7 +458,7 @@
 				DEVELOPMENT_TEAM = E9V4WE47UM;
 				INFOPLIST_FILE = test1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wenfei.test1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cesi.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

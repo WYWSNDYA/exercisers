@@ -13,6 +13,9 @@
 #import "DataStoreSource.h"
 #import "loadViewViewController.h"
 #import "shareAlongton.h"
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
 #define iOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0
 #define kIphone6Width(w) ([UIScreen mainScreen].bounds.size.width / 375.0 * w)
 #define kIphone6Height(h) ([UIScreen mainScreen].bounds.size.height / 667.0 * h)
@@ -52,11 +55,34 @@ typedef enum //定义一个常见的枚举类型
     }];
     
     
+    [self.manaGer
+     stopUpdatingLocation];// 这个是为了去停止整个定位效果的
+    
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    self.manaGer =[[AMapLocationManager alloc]init];
+//    
+//    self.manaGer.delegate=self;
+//    
+//    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9) {
+//        self.manaGer.allowsBackgroundLocationUpdates = YES;
+//    }
+//    //开始持续定位
+//    [self.manaGer startUpdatingLocation];
+//    
+//    [self.manaGer setLocatingWithReGeocode:YES];
+//    [self.manaGer startUpdatingLocation];
+//    
+    
+    
+    [self configLocationManager];
+    
+    
+    [self locateAction];
     
     shareAlongton * oneAlong2 = [shareAlongton shareTools];
      shareAlongton * oneAlong3 = [shareAlongton shareTools];
@@ -275,6 +301,52 @@ typedef enum //定义一个常见的枚举类型
     [self.SkfFPSLabel SKFFPSstopDisplayLink];
     self.SkfFPSLabel = nil;
 }
+- (void)amapLocationManager:(AMapLocationManager *)manager didUpdateLocation:(CLLocation *)location reGeocode:(AMapLocationReGeocode *)reGeocode
+{
+    NSLog(@"location:{lat:%f; lon:%f; accuracy:%f}", location.coordinate.latitude, location.coordinate.longitude, location.horizontalAccuracy);
+    
+}
+- (void)configLocationManager
+{
+    self.manaGer = [[AMapLocationManager alloc] init];
+    
+    [self.manaGer setDelegate:self];
+    
+    [self.manaGer setDesiredAccuracy:kCLLocationAccuracyHundredMeters];
+    
+    [self.manaGer setLocationTimeout:6];
+    
+    [self.manaGer setReGeocodeTimeout:3];
+}
+
+- (void)locateAction
+{
+    //带逆地理的单次定位
+    [self.manaGer requestLocationWithReGeocode:YES completionBlock:^(CLLocation *location, AMapLocationReGeocode *regeocode, NSError *error) {
+        
+        if (error)
+        {
+            NSLog(@"locError:{%ld - %@};", (long)error.code, error.localizedDescription);
+            
+            if (error.code == AMapLocationErrorLocateFailed)
+            {
+                return;
+            }
+        }
+        
+        //定位信息
+        NSLog(@"location:%@", location);
+        
+        //逆地理信息
+        if (regeocode)
+        {
+            NSLog(@"reGeocode:%@", regeocode);
+        }
+    }];
+}
+
+
+
 
 
 - (void)didReceiveMemoryWarning {

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "RealReachability.h"
+#import <AMapLocationKit/AMapLocationKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
 @interface AppDelegate ()
 
 @end
@@ -16,6 +18,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    [AMapServices sharedServices].apiKey =@"f305f8ec7276ec8ac733ad6bf1bb78a1";
+    
+    
+    
+    
     // Override point for customization after application launch.
     
    

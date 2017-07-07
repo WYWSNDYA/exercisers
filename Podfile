@@ -6,4 +6,7 @@ pod ‘AFNetworking’, '~> 3.0.4’
 pod 'RealReachability'
 pod ‘FMDB’
 pod ‘JSONModel’
+pod 'AMap2DMap'
+pod 'AMapSearch'
+pod ‘AMapLocation’
 end

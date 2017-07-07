@@ -13,11 +13,14 @@
 #import "TwoViewController.h"
 #import "RealReachability.h"
 #import "SKFFPSLabel.h"
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
 
 @interface ViewController : UIViewController<WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler>
 @property(nonatomic,strong)UIButton * againButton;
 @property(nonatomic,strong)UILabel * showLable;
 @property(nonatomic,strong)UIView * showView;
 @property (nonatomic, strong) SKFFPSLabel *SkfFPSLabel;
+@property(nonatomic,strong)AMapLocationManager * manaGer;
 @end
 
