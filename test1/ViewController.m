@@ -16,6 +16,7 @@
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <AMapSearchKit/AMapSearchKit.h>
 #import <AMapLocationKit/AMapLocationKit.h>
+#import "DianYuFa.h"
 #define iOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0
 #define kIphone6Width(w) ([UIScreen mainScreen].bounds.size.width / 375.0 * w)
 #define kIphone6Height(h) ([UIScreen mainScreen].bounds.size.height / 667.0 * h)
@@ -77,6 +78,17 @@ typedef enum //定义一个常见的枚举类型
 //    [self.manaGer setLocatingWithReGeocode:YES];
 //    [self.manaGer startUpdatingLocation];
 //    
+    
+    
+    DianYuFa * dianFa = [[DianYuFa alloc]init];
+
+    [dianFa setPickShow:@"aaaaa"];
+    
+    NSString * pop = dianFa.pickShow;
+    
+    
+    NSLog(@"%@",pop);
+    
     
     
     [self configLocationManager];
@@ -303,7 +315,7 @@ typedef enum //定义一个常见的枚举类型
 }
 - (void)amapLocationManager:(AMapLocationManager *)manager didUpdateLocation:(CLLocation *)location reGeocode:(AMapLocationReGeocode *)reGeocode
 {
-    NSLog(@"location:{lat:%f; lon:%f; accuracy:%f}", location.coordinate.latitude, location.coordinate.longitude, location.horizontalAccuracy);
+    //NSLog(@"location:{lat:%f; lon:%f; accuracy:%f}", location.coordinate.latitude, location.coordinate.longitude, location.horizontalAccuracy);
     
 }
 - (void)configLocationManager
@@ -326,7 +338,7 @@ typedef enum //定义一个常见的枚举类型
         
         if (error)
         {
-            NSLog(@"locError:{%ld - %@};", (long)error.code, error.localizedDescription);
+            //NSLog(@"locError:{%ld - %@};", (long)error.code, error.localizedDescription);
             
             if (error.code == AMapLocationErrorLocateFailed)
             {
@@ -340,7 +352,7 @@ typedef enum //定义一个常见的枚举类型
         //逆地理信息
         if (regeocode)
         {
-            NSLog(@"reGeocode:%@", regeocode);
+            //NSLog(@"reGeocode:%@", regeocode);
         }
     }];
 }
@@ -356,7 +368,7 @@ typedef enum //定义一个常见的枚举类型
 -(void)dealloc
 {
     
-    NSLog(@"wwwwwwwwwwww");
+   // NSLog(@"wwwwwwwwwwww");
     
     
 }

@@ -28,6 +28,7 @@
 		70EEF2E81F092CC600EF841A /* NetJudgeMent.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EEF2E71F092CC600EF841A /* NetJudgeMent.m */; };
 		70EEF2EB1F0934F100EF841A /* DataStoreSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EEF2EA1F0934F100EF841A /* DataStoreSource.m */; };
 		70EEF2ED1F093A0300EF841A /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EEF2EC1F093A0300EF841A /* libsqlite3.0.tbd */; };
+		70EF37EF1F10E914007E179A /* DianYuFa.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EF37EE1F10E914007E179A /* DianYuFa.m */; };
 		70F1D45A1F06876C00FE4C2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70F1D4591F06876C00FE4C2F /* Images.xcassets */; };
 		70F1D45C1F0687A900FE4C2F /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70F1D45B1F0687A900FE4C2F /* Images-2.xcassets */; };
 		D42E1F2129F82DA6BF094186 /* Pods_test1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EFF647A75CA85C14615EA2 /* Pods_test1.framework */; };
@@ -68,6 +69,8 @@
 		70EEF2E91F0934F100EF841A /* DataStoreSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataStoreSource.h; path = ../DataStoreSource.h; sourceTree = "<group>"; };
 		70EEF2EA1F0934F100EF841A /* DataStoreSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataStoreSource.m; path = ../DataStoreSource.m; sourceTree = "<group>"; };
 		70EEF2EC1F093A0300EF841A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		70EF37ED1F10E914007E179A /* DianYuFa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DianYuFa.h; sourceTree = "<group>"; };
+		70EF37EE1F10E914007E179A /* DianYuFa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DianYuFa.m; sourceTree = "<group>"; };
 		70F1D4591F06876C00FE4C2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		70F1D45B1F0687A900FE4C2F /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		91D01CEFD45B42CB3ADA257D /* Pods-test1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test1/Pods-test1.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 		703A38CC1EF8F242002DEC70 /* test1 */ = {
 			isa = PBXGroup;
 			children = (
+				70EF37ED1F10E914007E179A /* DianYuFa.h */,
+				70EF37EE1F10E914007E179A /* DianYuFa.m */,
 				70ED0ABA1F0D527600BDD64D /* shareAlongton.h */,
 				70ED0ABB1F0D527600BDD64D /* shareAlongton.m */,
 				70E9771C1F0BFFBB00F23A4B /* SKFFPSLabel.h */,
@@ -313,6 +318,7 @@
 				703A38D51EF8F242002DEC70 /* ViewController.m in Sources */,
 				70E9771E1F0BFFC500F23A4B /* SKFFPSLabel.m in Sources */,
 				703A38D21EF8F242002DEC70 /* AppDelegate.m in Sources */,
+				70EF37EF1F10E914007E179A /* DianYuFa.m in Sources */,
 				703A38CF1EF8F242002DEC70 /* main.m in Sources */,
 				70EEF2E81F092CC600EF841A /* NetJudgeMent.m in Sources */,
 				70DDA6951F0A75DF005CAF75 /* loadViewViewController.m in Sources */,
