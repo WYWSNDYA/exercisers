@@ -10,4 +10,12 @@
 
 @implementation TT__Show
 
+NSString * TT__ShowData(NSString * a, NSString * b){
+    
+    
+    return [NSString stringWithFormat:@"%@/%@",a,b];
+    
+    
+}
+
 @end

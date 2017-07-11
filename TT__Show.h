@@ -10,4 +10,6 @@
 
 @interface TT__Show : NSObject
 
+NSString * TT__ShowData(NSString * a, NSString * b);
+
 @end

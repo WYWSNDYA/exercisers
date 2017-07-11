@@ -29,6 +29,7 @@
 		70EEF2EB1F0934F100EF841A /* DataStoreSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EEF2EA1F0934F100EF841A /* DataStoreSource.m */; };
 		70EEF2ED1F093A0300EF841A /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EEF2EC1F093A0300EF841A /* libsqlite3.0.tbd */; };
 		70EF37EF1F10E914007E179A /* DianYuFa.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EF37EE1F10E914007E179A /* DianYuFa.m */; };
+		70EF37F21F123E17007E179A /* TT__Show.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EF37F11F123E17007E179A /* TT__Show.m */; };
 		70F1D45A1F06876C00FE4C2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70F1D4591F06876C00FE4C2F /* Images.xcassets */; };
 		70F1D45C1F0687A900FE4C2F /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70F1D45B1F0687A900FE4C2F /* Images-2.xcassets */; };
 		D42E1F2129F82DA6BF094186 /* Pods_test1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EFF647A75CA85C14615EA2 /* Pods_test1.framework */; };
@@ -71,6 +72,8 @@
 		70EEF2EC1F093A0300EF841A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		70EF37ED1F10E914007E179A /* DianYuFa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DianYuFa.h; sourceTree = "<group>"; };
 		70EF37EE1F10E914007E179A /* DianYuFa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DianYuFa.m; sourceTree = "<group>"; };
+		70EF37F01F123E17007E179A /* TT__Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TT__Show.h; sourceTree = "<group>"; };
+		70EF37F11F123E17007E179A /* TT__Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TT__Show.m; sourceTree = "<group>"; };
 		70F1D4591F06876C00FE4C2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		70F1D45B1F0687A900FE4C2F /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		91D01CEFD45B42CB3ADA257D /* Pods-test1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test1/Pods-test1.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 		703A38C11EF8F242002DEC70 = {
 			isa = PBXGroup;
 			children = (
+				70EF37F01F123E17007E179A /* TT__Show.h */,
+				70EF37F11F123E17007E179A /* TT__Show.m */,
 				703A38CC1EF8F242002DEC70 /* test1 */,
 				703A38CB1EF8F242002DEC70 /* Products */,
 				8F47D5EAE87C170CAB422199 /* Pods */,
@@ -321,6 +326,7 @@
 				70EF37EF1F10E914007E179A /* DianYuFa.m in Sources */,
 				703A38CF1EF8F242002DEC70 /* main.m in Sources */,
 				70EEF2E81F092CC600EF841A /* NetJudgeMent.m in Sources */,
+				70EF37F21F123E17007E179A /* TT__Show.m in Sources */,
 				70DDA6951F0A75DF005CAF75 /* loadViewViewController.m in Sources */,
 				7037FBFB1F0423FF00042F98 /* TwoViewController.m in Sources */,
 				706072751F08056000EE9DC2 /* Reachability.m in Sources */,

@@ -17,6 +17,7 @@
 #import <AMapSearchKit/AMapSearchKit.h>
 #import <AMapLocationKit/AMapLocationKit.h>
 #import "DianYuFa.h"
+#import "TT__Show.h"
 #define iOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0
 #define kIphone6Width(w) ([UIScreen mainScreen].bounds.size.width / 375.0 * w)
 #define kIphone6Height(h) ([UIScreen mainScreen].bounds.size.height / 667.0 * h)
@@ -48,14 +49,21 @@ typedef enum //定义一个常见的枚举类型
 -(void)upToNext
 {
     
-    loadViewViewController * loadView =[[loadViewViewController alloc]init];
-    
-    [self presentViewController:loadView animated:YES completion:^{
+    if (_delagete&&[_delagete respondsToSelector:@selector(printName:)]) {
         
-        NSLog(@"ok");
-    }];
+        loadViewViewController * loadView =[[loadViewViewController alloc]init];
+        
+        [self presentViewController:loadView animated:YES completion:^{
+            
+            NSLog(@"ok");
+        }];
+
     
+    [_delagete respondsToSelector:@selector(printName:)];
     
+        
+    }
+        
     [self.manaGer
      stopUpdatingLocation];// 这个是为了去停止整个定位效果的
     
@@ -80,53 +88,55 @@ typedef enum //定义一个常见的枚举类型
 //    
     
     
-    DianYuFa * dianFa = [[DianYuFa alloc]init];
-
-    [dianFa setPickShow:@"aaaaa"];
+    NSLog(@"%@",TT__ShowData(@"11",@"22"));
     
-    NSString * pop = dianFa.pickShow;
-    
-    
-    NSLog(@"%@",pop);
-    
-    
-    
-    [self configLocationManager];
-    
-    
-    [self locateAction];
-    
-    shareAlongton * oneAlong2 = [shareAlongton shareTools];
-     shareAlongton * oneAlong3 = [shareAlongton shareTools];
-     shareAlongton * oneAlong4 = [shareAlongton shareTools];
-    
-    [oneAlong2 printNameAndInt];
-    
-    oneAlong2.a = 1;
-    oneAlong2.copydRight = @"goodThing";
-    
-    
-    
-    
-    [NetJudgeMent judgeMentFromNet];
-    
-    [DataStoreSource creatTable];
-    
-    [DataStoreSource  insertData:@"222" age:5];
-    
-    
-    [DataStoreSource deleFromTheForm:@"li1"];
-    
-    [DataStoreSource checkFromTheForm];
-    
-    
-    self.SkfFPSLabel = [[SKFFPSLabel alloc]init];
-    self.SkfFPSLabel.frame = CGRectMake(40, 354, 50, 30);
-    //    _SkfFPSLabel setb
-    [self.view addSubview:self.SkfFPSLabel];
-    [self.view bringSubviewToFront:self.SkfFPSLabel];
- 
-    
+//    DianYuFa * dianFa = [[DianYuFa alloc]init];
+//
+//    [dianFa setPickShow:@"aaaaa"];
+//    
+//    NSString * pop = dianFa.pickShow;
+//    
+//    
+//    NSLog(@"%@",pop);
+//    
+//    
+//    
+//    [self configLocationManager];
+//    
+//    
+//    [self locateAction];
+//    
+//    shareAlongton * oneAlong2 = [shareAlongton shareTools];
+//     shareAlongton * oneAlong3 = [shareAlongton shareTools];
+//     shareAlongton * oneAlong4 = [shareAlongton shareTools];
+//    
+//    [oneAlong2 printNameAndInt];
+//    
+//    oneAlong2.a = 1;
+//    oneAlong2.copydRight = @"goodThing";
+//    
+//    
+//    
+//    
+//    [NetJudgeMent judgeMentFromNet];
+//    
+//    [DataStoreSource creatTable];
+//    
+//    [DataStoreSource  insertData:@"222" age:5];
+//    
+//    
+//    [DataStoreSource deleFromTheForm:@"li1"];
+//    
+//    [DataStoreSource checkFromTheForm];
+//    
+//    
+//    self.SkfFPSLabel = [[SKFFPSLabel alloc]init];
+//    self.SkfFPSLabel.frame = CGRectMake(40, 354, 50, 30);
+//    //    _SkfFPSLabel setb
+//    [self.view addSubview:self.SkfFPSLabel];
+//    [self.view bringSubviewToFront:self.SkfFPSLabel];
+// 
+//    
  /* AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
     
     [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {

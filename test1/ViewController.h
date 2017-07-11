@@ -15,12 +15,15 @@
 #import "SKFFPSLabel.h"
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <AMapLocationKit/AMapLocationKit.h>
-
+@protocol nameAsscoate<NSObject>
+-(void)printName:(NSString *)name;
+@end
 @interface ViewController : UIViewController<WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler>
 @property(nonatomic,strong)UIButton * againButton;
 @property(nonatomic,strong)UILabel * showLable;
 @property(nonatomic,strong)UIView * showView;
 @property (nonatomic, strong) SKFFPSLabel *SkfFPSLabel;
 @property(nonatomic,strong)AMapLocationManager * manaGer;
+@property(nonatomic,weak)id<nameAsscoate>delagete;
 @end
 
