@@ -10,7 +10,7 @@
 #import "SKFFPSLabel.h"
 #import "ViewController.h"
 typedef int(^SayHello)(int a, int b);
-@interface loadViewViewController ()<nameAsscoate>
+@interface loadViewViewController ()
 @property(nonatomic,weak)SayHello sayWord;
 @end
 
@@ -20,11 +20,6 @@ typedef int(^SayHello)(int a, int b);
     [super viewDidLoad];
     
     ViewController * viewShell = [[ViewController alloc]init];
-    
-    
-    viewShell.delagete = self;
-    
-    
     
     NSLog(@"tttttt");
     
@@ -72,8 +67,17 @@ typedef int(^SayHello)(int a, int b);
 {
     
     
-    [_downloadTask resume];//开始去下载
+    //[_downloadTask resume];//开始去下载
     
+    
+    ViewController * oneView =[[ViewController alloc]init];
+    
+    //[self.navigationController popToViewController:oneView animated:YES];
+    
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
+    NSLog(@"22222");
     
     
     

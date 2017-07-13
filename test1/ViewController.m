@@ -49,7 +49,7 @@ typedef enum //定义一个常见的枚举类型
 -(void)upToNext
 {
     
-    if (_delagete&&[_delagete respondsToSelector:@selector(printName:)]) {
+    
         
         loadViewViewController * loadView =[[loadViewViewController alloc]init];
         
@@ -59,10 +59,6 @@ typedef enum //定义一个常见的枚举类型
         }];
 
     
-    [_delagete respondsToSelector:@selector(printName:)];
-    
-        
-    }
         
     [self.manaGer
      stopUpdatingLocation];// 这个是为了去停止整个定位效果的
